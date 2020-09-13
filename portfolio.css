@@ -129,7 +129,7 @@ nav{
 	bottom:0px;
 	left: -3%;
 	border-right: 1px solid  rgba(41,41,41,0.30);
-}*/
+}
 
 .black-line::after{
   content: ' ';
@@ -141,7 +141,8 @@ nav{
  border-color:  #292929 transparent transparent transparent;
   right: -.7em;
   bottom: -2px;
-}
+}*/
+
 .social{
 	position: absolute;
 	left: 50px;
@@ -149,14 +150,17 @@ nav{
 	display: flex;
 
 }
+
 .social a{
 	margin: 6px 12px;
 
 }
+
 .social i{
 	color:rgba(18,17,17,0.40);
 	font-size: 14px;
 }
+
 .social a:hover i{
 	color:#1723d1;
 	transition: all ease 0.5s;
