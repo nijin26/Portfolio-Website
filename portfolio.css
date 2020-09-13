@@ -1,11 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 body{
+
 	overflow-x: hidden;
 	overflow-y: hidden;
 	margin:0px;
 	padding:0px;
-	background-color:#16EDF1FD;
+	color:#16EDF1FD;
 	font-family: sans-serif;	
 }
 ul{
@@ -23,9 +24,15 @@ a{
 	background-size: 1330px;
 	background-position: right bottom;
 	background-repeat: no-repeat;
-	background-image: url("Images/background.png");
 	background-color: #edf1fd;
 }
+
+.bg-img{
+
+	background-image: url("Images/background.png");
+
+}
+
 /*
 nav{
 	display:flex;
@@ -75,18 +82,20 @@ nav{
 	transition: all ease 0.4s;
 }
 .name{
-	font-family: calibri;
+
 	width: 500px;
-	position: absolute;
+	position: fixed;
 	left: 20%;
 	top: 50%;
 	transform: translate(-20%,-50%);
 	font-family: 'Rancho', cursive;
 }
+
 .name p:nth-child(1),.name .details{
 	color:#6c707c;
 	font-size: 16px;
 }
+
 .name h1{
 	font-family: 'Rancho', cursive;
 	font-size: 40px;
@@ -94,6 +103,7 @@ nav{
 	letter-spacing: 3px;
 	color:#292929;
 }
+
 .btn{
 	width:200px;
 	height: 45px;
@@ -103,6 +113,7 @@ nav{
 	background-color: #292929;
 	color:#FFFFFF;
 }
+
 .btn:hover{
 	background-color: #131313;
 	transition: all ease 0.5s;
@@ -147,6 +158,40 @@ nav{
 	font-size: 14px;
 }
 .social a:hover i{
-	color:#17d1ac;
+	color:#1723d1;
 	transition: all ease 0.5s;
+}
+
+
+@media(max-width:1190px)
+{
+	#main{
+		background-size: 1150px !important;
+		
+	}
+	.name{
+		left: 10%;
+		top: 50%;
+		transform: translate(-10%,-50%);
+	}
+	.bg-img img{
+		height:400px;
+	}
+}
+
+@media(max-width:970px)
+{
+	#main{
+		background-image: none !important;
+		
+	}
+	.name{
+		left: center;
+		top: center;
+		transform: translate(-50%,-50%);
+		
+	}
+	.about-model{
+		display: none;
+	}
 }
